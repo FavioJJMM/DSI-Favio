@@ -1,0 +1,28 @@
+table {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ADD8E6;
+    color: white;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .fila-par {
+    background-color: #F5DEB3;
+  }
+  
+  .fila-impar {
+    background-color: #FFB6C1;
+  }
+  
