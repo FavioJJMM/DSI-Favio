@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etiquetas HTML y sus atributos</title>
+</head>
+<body>
+	<h1>Etiquetas y atributos HTML</h1>
+	<p>A continuación se muestran algunas etiquetas HTML comunes y algunos de sus atributos:</p>
+	
+	<h2>Etiquetas multimedia:</h2>
+
+<p><strong>&lt;video&gt;:</strong> Se utiliza para insertar videos en una página web. Algunos de sus atributos son:</p>
+<ul>
+  <li>src: especifica la URL del video</li>
+  <li>poster: especifica una imagen de vista previa para el video</li>
+  <li>width: especifica el ancho del video en píxeles</li>
+  <li>height: especifica la altura del video en píxeles</li>
+  <li>autoplay: hace que el video se reproduzca automáticamente</li>
+  <li>controls: muestra los controles de reproducción del video</li>
+  <li>loop: hace que el video se reproduzca en bucle</li>
+  <li>preload: indica si el video debe ser cargado al cargar la página (none, metadata, auto)</li>
+</ul>
+<p>Ejemplo:</p>
+<video src="Scissor Seven - Natural (720p).mp4" width="640" height="360" poster="vista-previa.jpg" autoplay controls loop preload="metadata">
+  Tu navegador no soporta la etiqueta de video.
+</video>
+
+
+<p><strong>&lt;iframe&gt;:</strong> Se utiliza para insertar contenido de otras páginas en una página web. Algunos de sus atributos son:</p>
+<ul>
+  <li>src: especifica la URL de la página a ser mostrada en el iframe</li>
+  <li>width: especifica el ancho del iframe en píxeles</li>
+  <li>height: especifica la altura del iframe en píxeles</li>
+
+  <li>frameborder: indica si el borde del iframe debe ser mostrado o no (0 o 1)</li>
+  <li>allowfullscreen: permite que el iframe se pueda ver en pantalla completa (solo para videos)</li>
+</ul>
+<p>Ejemplo:</p>
+<iframe src="https://www.youtube.com/embed/VZ7hHQDx17s" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+<h2>Etiquetas para estructurar contenido:</h2>
+<p><strong>&lt;ol&gt;:</strong> Crea una lista ordenada. Algunos de sus atributos son:</p>
+<ul>
+  <li>start: especifica el número de inicio de la lista ordenada</li>
+  <li>type: especifica el tipo de marcador de la lista (1, A, a, I, i)</li>
+  <li>reversed: invierte el orden de la lista ordenada</li>
+</ul>
+<p>Ejemplo:</p>
+<ol start="3" type="I">
+  <li value="1">Primer elemento</li>
+  <li>Segundo elemento</li>
+  <li>Tercer elemento</li>
+</ol>
+
+<p><strong>&lt;li&gt;:</strong> Define un elemento de la lista. No tiene atributos propios, pero puede heredar algunos de la etiqueta `ol` o `ul`.</p>
+<p>Ejemplo:</p>
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ul>
+
+<h2>Etiquetas para enlace:</h2>
+<p><strong>&lt;a&gt;:</strong> Se utiliza para crear enlaces a otras páginas web o a diferentes secciones de la misma página. Algunos de sus atributos son:</p>
+<ul>
+  <li>href: especifica la URL del destino del enlace</li>
+  <li>target: indica dónde se abrirá el enlace (en la misma ventana o en una nueva ventana/tab) (_self o _blank)</li>
+  <li>title: añade un texto que aparece cuando se pasa el cursor sobre el enlace</li>
+</ul>
+<p>Ejemplo:</p>
+<a href="https://www.google.com" target="_blank" title="Ir a Google">Ir a Google</a>
+<h2>Etiquetas para tablas:</h2>
+<p><strong>&lt;table&gt;:</strong> Se utiliza para crear tablas en una página web. Algunos de sus atributos son:</p>
+<ul>
+  <li>border: especifica el grosor del borde de la tabla en píxeles</li>
+  <li>cellspacing: especifica el espacio entre las celdas de la tabla en píxeles</li>
+  <li>cellpadding: especifica el espacio entre el contenido de las celdas y el borde de las mismas en píxeles</li>
+  <li>width: especifica el ancho de la tabla en píxeles o en porcentaje</li>
+  <li>height: especifica la altura de la tabla en píxeles o en porcentaje</li>
+</ul>
+<p>Ejemplo:</p>
+<table border="1" cellspacing="0" cellpadding="10" width="50%">
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>María</td>
+    <td>30</td>
+  </tr>
+</table>
+<p><strong>&lt;col&gt;:</strong> Define las propiedades de una o varias columnas de una tabla. Algunos de sus atributos son:</p>
+<ul>
+  <li>span: especifica cuántas columnas debe abarcar el <code>&lt;col&gt;</code></li>
+  <li>width: especifica el ancho de la columna</li>
+  <li>style: modifica el estilo de la columna</li>
+  <li>align: especifica la alineación del contenido de la columna (left, center, right, justify, char)</li>
+</ul>
+<p>Ejemplo:</p>
+<table>
+  <colgroup>
+    <col span="2" style="background-color: yellow;">
+    <col style="background-color: lightblue;">
+  </colgroup>
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+    <th>País</th>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>25</td>
+    <td>México</td>
+  </tr>
+  <tr>
+    <td>María</td>
+    <td>30</td>
+    <td>Colombia</td>
+  </tr>
+</table>
+<h2>Etiquetas para formularios:</h2>
+<p><strong>&lt;form&gt;:</strong> Se utiliza para crear formularios en una página web. Algunos de sus atributos son:</p>
+<ul>
+  <li>action: especifica la URL a la que se enviarán los datos del formulario</li>
+  <li>method: especifica el método HTTP que se utilizará para enviar los datos del formulario (get o post)</li>
+  <li>enctype: especifica cómo se codificarán los datos del formulario antes de enviarlos (application/x-www-form-urlencoded o multipart/form-data)</li>
+  <li>name: especifica el nombre del formulario</li>
+</ul>
+
+  <p><strong>&lt;input&gt;:</strong> Se utiliza para crear un campo de entrada en un formulario. Algunos de sus atributos son:</p>
+  <ul>
+    <li>type: especifica el tipo de campo de entrada (texto, email, contraseña, etc.)</li>
+    <li>id: especifica un identificador único para el campo de entrada</li>
+    <li>name: especifica el nombre del campo de entrada</li>
+    <li>placeholder: especifica una breve descripción del campo de entrada</li>
+    <li>required: especifica que el campo de entrada debe ser rellenado antes de enviar el formulario</li>
+  </ul>
+  <p>Ejemplo:</p>
+  <form action="/procesar-formulario" method="post" enctype="text/plain" name="formulario_ejemplo">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Inserte su nombre" required><br><br>
+</body>
+</html>
