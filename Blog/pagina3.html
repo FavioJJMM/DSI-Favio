@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Hardy</title>
+</head>
+<body>
+    <article>
+        <h2><font face="Comic Sans">Matt Hardy</font></h2>
+        
+        <p>Matt Hardy es un luchador profesional estadounidense nacido en 1974. Junto con su hermano Jeff, formó parte del exitoso equipo de lucha libre conocido como The Hardy Boyz. A lo largo de su carrera, Hardy ha ganado múltiples campeonatos en parejas, tanto en la WWE como en otras empresas independientes de lucha libre.
+            Hardy es conocido por su estilo de lucha técnico y por ser un innovador en el uso de objetos en el ring, como sillas y mesas. También ha sido un personaje muy querido por los fans, debido a su actitud rebelde y su capacidad para superar obstáculos y dificultades en el ring.
+            Además de su carrera como luchador, Hardy también ha tenido incursiones en otras áreas, como la actuación y la música. En 2019, se unió a All Elite Wrestling (AEW), donde continúa su carrera como luchador y sigue demostrando su habilidad en el ring.</p>
+
+            
+            
+    </article>
+   
+      
+</section>
+<div style="width: 100%;">
+    <div style="float: left; width: 50%;">
+      <img src="matt.gif"  width="500">
+      <p>Matt Hardy haciendo su entrada</p>
+    </div>
+    <div style="float: right; width: 50%;">
+        <video id="videom" src="hardy-boyz.mp4" controls width="600" autoplay  ></video>
+        <p>Regreso de Matt y Jeff Hardy</p>
+      </div>
+      <div style="text-align: center; clear: both;">
+        <audio id="audiom" src="matt-theme-song.mp3" controls></audio>
+        <p>Cancion de Matt Hardy</p>
+    </div>
+
+    <script>
+        var video = document.getElementById("videom");
+        var audio = document.getElementById("audiom");
+  
+        video.addEventListener('ended', function() {
+          audio.play();
+        });
+      </script>
+  </div>
+  
+<a href="index.html">Regresar</a>
+<hr>
+<footer style="text-align: center;" >
+    <p>Derechos reservados: Jardinez Montiel Favio</p>
+</footer>
+</body>
+</html>
