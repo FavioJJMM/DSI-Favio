@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tarea Layout y box model</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    #Header{
+        width: 100%;
+        height: 80px;
+        background-color:#196ddb;
+        float: left;
+        position: relative;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #Header > .TituloH{
+        color: white;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: calc(80px - 16px * 2);
+        padding-left: 45px;
+        font-size: 30px;
+    }
+
+    #Main{
+        width: 100%;
+        height: calc(100% - (80px + 88px));
+        background-color: #6BABFF;
+    }
+
+    #Section{
+        width: 15%;
+        height: 100%;
+        float: right;
+        position: relative;
+        background-color: #DAFAFF;
+    }
+
+    #Section > #TituloS{
+        width: 100%;
+        height: 10%;
+        float: left;
+        position: relative;
+        padding: 40px;
+        box-sizing: border-box;
+        color: #323232;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+
+    #Aside{
+        width: 85%;
+        height: 100%;
+        float: left;
+        position: relative;
+        padding: 40px;
+        box-sizing: border-box;
+        background-color: #45a4b4;
+    }
+
+    #Aside > h1{
+        color: #323232;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-left: 35px;
+        font-size: 30px;
+    }
+
+    #Aside > .Cuadros {
+        background-color:#1a5eb6;
+        width: 128px;
+        height: 128px;
+        float: left;
+        margin: 32px;
+    }
+
+    #Aside > .CuadroPrimero {
+        background-color:#1a5eb6;
+        width: 128px;
+        height: 128px;
+        float: left;
+        margin: 32px;
+    }
+
+    #Footer{
+        width: 100%;
+        height: 88px;
+        background-color:#196ddb;
+        float: left;
+        position: relative;
+        padding: 19px;
+        box-sizing: border-box;
+    }
+
+    #Footer > .TituloF{
+        color: white;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: calc(88px - 16px * 2);
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <header id="Header">
+        <h1 class="TituloH">
+            Title
+        </h1>
+    </header>
+
+    <main id="Main">
+
+        <section id="Section">
+            <div id="TituloS">
+                <h1>Sidebar</h1>
+            </div>
+        </section>
+
+        <aside id="Aside">
+           <h1>Items</h1>
+
+
+           <div class="CuadroPrimero"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+           <div class="CuadroPrimero"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+           <div class="Cuadros"></div>
+
+        </aside>
+
+    </main>
+
+    <footer id="Footer">
+        <p class="TituloF">
+            Footer
+        </p>
+    </footer>
+</body>
+</html>
